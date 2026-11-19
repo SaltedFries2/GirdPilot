@@ -1,0 +1,9 @@
+{
+  "dataset": "InverterFaults",
+  "note": "Synthetic inverter fault mapping",
+  "points": [
+    {"signal": "INV_OVERCURRENT", "fcda": "INVT1/GGIO1.Ind30[ST]"},
+    {"signal": "INV_OVERTEMP", "fcda": "INVT1/GGIO1.Ind31[ST]"},
+    {"signal": "INV_GRID_LOSS", "fcda": "INVT1/GGIO1.Ind32[ST]"}
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Intentionally broken: FCDA points at GGIO2, but only GGIO1 is declared. -->
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" version="2007" revision="B">
+  <Header id="GridPilotDanglingGgio" nameStructure="IEDName" />
+  <IED name="BESS_BREAKER">
+    <AccessPoint name="AP1"><Server><LDevice inst="BREAKER1"><LN0 lnClass="LLN0" inst="" lnType="LLN0_Type">
+      <DataSet name="BreakerStatus">
+        <FCDA ldInst="BREAKER1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind1" fc="ST" />
+        <FCDA ldInst="BREAKER1" prefix="" lnClass="GGIO" lnInst="2" doName="Ind2" fc="ST" />
+      </DataSet>
+      <GSEControl name="Breaker_GSE" datSet="BreakerStatus" confRev="1" type="GOOSE" />
+    </LN0><LN lnClass="GGIO" inst="1" lnType="GGIO_Type" /></LDevice></Server></AccessPoint>
+  </IED>
+</SCL>

@@ -1,0 +1,9 @@
+{
+  "dataset": "BmsWarnings",
+  "note": "Synthetic BMS warning mapping",
+  "points": [
+    {"signal": "BMS_CELL_OVERTEMP", "fcda": "BMS1/GGIO2.Ind20[ST]"},
+    {"signal": "BMS_CELL_UNDERVOLT", "fcda": "BMS1/GGIO2.Ind21[ST]"},
+    {"signal": "BMS_INSULATION_WARN", "fcda": "BMS1/GGIO2.Ind22[ST]"}
+  ]
+}

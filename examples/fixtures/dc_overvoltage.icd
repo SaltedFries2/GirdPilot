@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" version="2007" revision="B">
+  <Header id="GridPilotDcOvervoltage" nameStructure="IEDName" />
+  <IED name="BESS_DC">
+    <AccessPoint name="AP1"><Server><LDevice inst="DCCIR1"><LN0 lnClass="LLN0" inst="" lnType="LLN0_Type">
+      <DataSet name="DcOvervoltage">
+        <FCDA ldInst="DCCIR1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind10" fc="ST" />
+        <FCDA ldInst="DCCIR1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind11" fc="ST" />
+        <FCDA ldInst="DCCIR1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind12" fc="ST" />
+      </DataSet>
+      <GSEControl name="DcTrip_GSE" datSet="DcOvervoltage" confRev="1" type="GOOSE" />
+    </LN0><LN lnClass="GGIO" inst="1" lnType="GGIO_Type" /></LDevice></Server></AccessPoint>
+  </IED>
+</SCL>

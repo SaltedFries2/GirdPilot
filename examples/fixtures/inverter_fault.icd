@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" version="2007" revision="B">
+  <Header id="GridPilotInverterFault" nameStructure="IEDName" />
+  <IED name="BESS_INV">
+    <AccessPoint name="AP1"><Server><LDevice inst="INVT1"><LN0 lnClass="LLN0" inst="" lnType="LLN0_Type">
+      <DataSet name="InverterFaults">
+        <FCDA ldInst="INVT1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind30" fc="ST" />
+        <FCDA ldInst="INVT1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind31" fc="ST" />
+        <FCDA ldInst="INVT1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind32" fc="ST" />
+      </DataSet>
+      <GSEControl name="InvFault_GSE" datSet="InverterFaults" confRev="1" type="GOOSE" />
+    </LN0><LN lnClass="GGIO" inst="1" lnType="GGIO_Type" /></LDevice></Server></AccessPoint>
+  </IED>
+</SCL>

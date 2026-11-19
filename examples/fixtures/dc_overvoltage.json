@@ -1,0 +1,9 @@
+{
+  "dataset": "DcOvervoltage",
+  "note": "Synthetic DC-side overvoltage mapping",
+  "points": [
+    {"signal": "DC_OVER_VOLTAGE_WARN", "fcda": "DCCIR1/GGIO1.Ind10[ST]"},
+    {"signal": "DC_OVER_VOLTAGE_TRIP", "fcda": "DCCIR1/GGIO1.Ind11[ST]"},
+    {"signal": "DC_CONTACTOR_OPEN", "fcda": "DCCIR1/GGIO1.Ind12[ST]"}
+  ]
+}
