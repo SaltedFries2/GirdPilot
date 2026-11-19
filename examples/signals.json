@@ -1,0 +1,30 @@
+{
+  "dataset": "BESS_TripEvents",
+  "note": "Synthetic independent reference; mapping by dataset member position",
+  "points": [
+    {
+      "signal": "DC_OVER_VOLTAGE",
+      "fcda": "BRANCH1/GGIO1.Ind76[ST]"
+    },
+    {
+      "signal": "BREAKER_TRIP",
+      "fcda": "BRANCH1/GGIO1.Ind77[ST]"
+    },
+    {
+      "signal": "COMMUNICATION_FAILURE",
+      "fcda": "BRANCH1/GGIO1.Ind78[ST]"
+    },
+    {
+      "signal": "BMS_WARNING",
+      "fcda": "BRANCH1/GGIO1.Ind79[ST]"
+    },
+    {
+      "signal": "EMERGENCY_STOP",
+      "fcda": "BRANCH1/GGIO1.Ind80[ST]"
+    },
+    {
+      "signal": "INVERTER_FAULT",
+      "fcda": "BRANCH1/GGIO1.Ind81[ST]"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCL xmlns="http://www.iec.ch/61850/2003/SCL" version="2007" revision="B">
+  <Header id="GridPilotSyntheticBESS" nameStructure="IEDName" />
+  <IED name="GRIDPILOT_SIM">
+    <AccessPoint name="AP1"><Server><LDevice inst="BRANCH1"><LN0 lnClass="LLN0" inst="" lnType="LLN0_Type">
+      <DataSet name="BESS_TripEvents">
+        <FCDA ldInst="BRANCH1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind77" fc="ST" />
+        <FCDA ldInst="BRANCH1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind76" fc="ST" />
+        <FCDA ldInst="BRANCH1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind78" fc="ST" />
+        <FCDA ldInst="BRANCH1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind79" fc="ST" />
+        <FCDA ldInst="BRANCH1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind80" fc="ST" />
+        <FCDA ldInst="BRANCH1" prefix="" lnClass="GGIO" lnInst="1" doName="Ind81" fc="ST" />
+      </DataSet>
+      <GSEControl name="BESS_Trip" datSet="BESS_TripEvents" confRev="1" type="GOOSE" />
+    </LN0><LN lnClass="GGIO" inst="1" lnType="GGIO_Type" /></LDevice></Server></AccessPoint>
+  </IED>
+</SCL>
